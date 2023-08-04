@@ -1,0 +1,6 @@
+nome: Ana Clara Ortiz Ochner
+Endereço: rua brasil
+loucura 
+idade:19
+telefone: (19)0000000000
+
