@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Atividade2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <fieldset>
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+     
+    <div class="content">      
+      <div id="login">
+        <form method="post" action=""> 
+            <font face="Times" color="#000000"> MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO </font><br/> 
+          <p>  
+          <p> 
+            <b><label for="nome_login">Login:</label></b>
+            <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+          </p>
+           
+          <p> 
+            <b><label for="senha">Senha:</label></b>
+            <input id="senha" name="senha" required="required" type="password" placeholder="ex. senha" /> 
+          </p>
+          <b><label for="radio">Stats:</label></b>
+          <select name="select">
+            <option value="valor1">Ativo</option>
+            <option value="valor2" selected>Inativo</option>
+          </select><br/>
+          
+        <br/><b><label for="radio">Tipo:</label></b>
+        <b><input type="radio" name="genero" value="T">Técnico</b>
+        <b><input type="radio" name="genero" value="P">Professor</b>
+        <b><input type="radio" name="Aluno" value="A">Aluno<br/></b>
+          </p>
+          <b><label for="nome_cad">Data Criação</label>
+          <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" /><br/> 
+          <b><label for="radio">Perfil:</label></b>
+          <b><input type="radio" name="genero" value="C">Convidado</b>
+          <b><input type="radio" name="genero" value="A">Administrador<br/></b>
+        </form>
+      </div>
+    <br/><b><label>Comentário: </label><br/></b>
+            <textarea id="story" name="story" rows="10" cols="70"></textarea></div><br/>
+            <b><input type="checkbox" name="vicio" value="tabaco">Compras</b>
+            <b><input type="checkbox" name="vicio" value="alcool">Biblioteca</b>
+            <b><input type="checkbox" name="vicio" value="aposta">Acadêmico<br/></b>
+        <h4>Módulos</h4>
+        <b><input type="checkbox" name="vicio" value="alcool">Documentação</b>
+        <b><input type="checkbox" name="vicio" value="aposta">Recusos Humanos<br/></b>
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Excluir">
+            
+  </div>  
+</fieldset>
+</body>
+</html>
