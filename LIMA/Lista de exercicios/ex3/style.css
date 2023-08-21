@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+ 
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  header {
+   flex: 75px;
+    background: red;
+  }
+  
+  main {
+    flex: 75px;
+    background: green;
+    display: flex;
+  }
+  
+  footer {
+    flex: 75px;
+    background: blue;
+  }
