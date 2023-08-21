@@ -28,7 +28,7 @@ body{
     background-color: green;
     height: 200px;
     width: 200px;
-    border-radius: 10px 10px 100px 10px;
+    border-radius: 10px 10px 100.px 10px;
     border: 5px solid black;
     /* margin: 20px; */
     padding: 10px 10px 10px 10px;
