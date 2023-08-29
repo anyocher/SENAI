@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.lista2{
+    display: flex;  
+}
+
+.lista2 li{
+    margin: 20px;  
+}
+

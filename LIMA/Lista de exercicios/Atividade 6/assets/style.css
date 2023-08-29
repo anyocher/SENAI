@@ -1,0 +1,50 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.red {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 100%;
+}
+
+.green {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 100%;
+}
+
+.blue {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 100%;
+}
+
+.container1 {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin: 20px
+}
+
+.container1 div {
+    margin: 10px;
+}
+
+.container2{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.container3{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+}

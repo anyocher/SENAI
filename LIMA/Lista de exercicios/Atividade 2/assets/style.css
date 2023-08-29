@@ -1,0 +1,20 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    height: 20vh;
+    border-collapse: collapse; 
+}
+  
+tr {
+    border-bottom: 1pt solid black;
+    display: flex;
+    margin: 20px;
+}
+
+tr {
+    display: flex;  
+    margin: 10px;
+}

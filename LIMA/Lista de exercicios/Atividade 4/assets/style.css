@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 98vw;
+    height: 80vh;
+}
+
+.red{
+    background-color: red;
+    height: 850px;
+    width: 80%; 
+}
+
+.green{
+    background-color: green;
+    height: 850px;
+    width: 80%; 
+}
+
+.blue{
+    background-color: blue;
+    height: 850px;
+    width: 80%; 
+}
