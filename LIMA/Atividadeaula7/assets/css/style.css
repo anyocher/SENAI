@@ -1,0 +1,36 @@
+header, div {
+    box-sizing: border-box;
+  }
+  
+  header {
+    position: relative;
+    width: 1220px;
+    max-width: 90%;
+    height: 120px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    margin: 0px auto;
+    
+  }
+  
+  #logo {
+    position: absolute;
+    width: 120px;
+    top: 0px;  
+    bottom: 0px;
+    left: 0px;
+    
+  
+  }
+  
+  
+  #superior, #inferior {
+    text-align: right;
+    line-height: 40px;
+    padding: 10px;
+  }
+
+  :root{
+    --Roxo: #a4a1a9;
+  }
