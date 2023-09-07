@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+background-color: #171717;
+
+
+}
+
+html {
+    cursor: url('../img/a.ico'),auto !important;
+}
+
+.TUDO {
+    display: flex;
+    gap: 15px;
+}
+
+.filtro {
+    width: 150px;
+    height: 190px;
+    padding: 0 26px 26px 26px;
+    margin: 40px 0 0 40px;
+    border: 1px dashed  rgb(167, 108, 108);
+    border-radius: 10%;
+
+}
+
+.filtro p {
+    margin-top: 30px;
+}
+.categoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 45px;
+    background-color: #ff2a2ae5;
+    
+}
+
+.categoria p {
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    cursor: url('../img/a.ico'),auto;
+}
+.login  {
+    display: flex;
+    color: rgb(218, 207, 207);
+    gap: 20px;
+    align-items: center;
+}
+
+.login img {
+    width: 35px;
+    padding: 10px;
+}
+
+
+.buscar {
+    align-items: center;
+    display: flex;
+}
+
+.buscar input {
+    width: 400px;
+    padding: 10px;
+    border-radius: 9px;
+
+}
+
+.logo img {
+    width: 100px;
+
+}
+
+.buscar img {
+    width: 29px;
+    transform: translateX(-50px);
+}
+
+.carrinho img {
+    
+    width: 43px;
+}
+
+
+.card {
+    position: relative;
+    width: 11.875em;
+    height: 16.5em;
+    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+    
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+  }
+  
+.card .Product {
+    width: 200px;
+    height: 160px;
+    margin: auto;
+}
+  
+  .card::after {
+    content: "Add to Cart";
+    padding-top: 1.25em;
+    padding-left: 1.25em;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    background: #ff0000;
+    color: #ffffff;
+    height: 2.5em;
+    width: 90%;
+    transition: all 80ms;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+  }
+  
+  .card .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 1.875em;
+    font-weight: 400;
+    color: #242020;
+  }
+  
+  .card .price {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 0.625em;
+    color: #000;
+  }
+  
+  .card:hover::after {
+ 
+    bottom: 0;
+    opacity: 1;
+  }
+  
+  .card:active {
+    transform: scale(0.98);
+  }
+  
+  .card:active::after {
+    content: "Added !";
+    height: 3.125em;
+  }
+  
+  .text {
+    max-width: 55px;
+  }
+  
+  .imagem img {
+    position: relative;
+    margin-bottom: -5px;
+    width: 15vw;
+    height: 25vh;
+    z-index: 1;
+    background: rgb(218, 204, 204);
+    display: grid;
+    place-items: center;
+  }
+
+  .grid {
+    gap: 5px;
+    margin-top: 50px;
+    display: flex;
+  }
+
+  footer {
+    margin-top: 20px;
+    background-color: #202020;
+    height: 120px;
+  }
+
+  .contact {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-1, .contact-2 {
+    color: #fff;
+    display: flex;
+    gap: 30px;
+
+  }
