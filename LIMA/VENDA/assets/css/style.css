@@ -177,8 +177,8 @@ a {
   .imagem img {
     position: relative;
     margin-bottom: -5px;
-    width: 15vw;
-    height: 25vh;
+    height: 200px;
+    /* width: 200px; */
     z-index: 1;
     background: rgb(218, 204, 204);
     display: grid;
