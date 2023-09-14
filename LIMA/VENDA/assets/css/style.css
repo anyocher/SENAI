@@ -178,7 +178,7 @@ a {
     position: relative;
     margin-bottom: -5px;
     height: 200px;
-    /* width: 200px; */
+  
     z-index: 1;
     background: rgb(218, 204, 204);
     display: grid;
@@ -197,14 +197,14 @@ a {
     height: 120px;
   }
 
-  .contact {
+  .CONTATOS {
     display: flex;
     height: 100%;
     flex-direction: column;
     align-items: center;
   }
   
-  .contact-1, .contact-2 {
+  .COT1, .COT2 {
     color: #fff;
     display: flex;
     gap: 30px;
