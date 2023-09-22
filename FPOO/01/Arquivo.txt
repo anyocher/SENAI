@@ -1,0 +1,4 @@
+Ana 5 8 10
+Clara 10 10 10
+luiza 5 5 5
+marcia 3 4 5
