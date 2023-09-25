@@ -17,9 +17,9 @@ main()
  
  saida = fopen("soma.txt","w");
  
- printf("\n 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = ");
+ printf("\n 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = \n ");
  
- printf ("\n ------------------------------ \n ");
+ 
 
  printf ("\n Soma: %.f\n",soma);
 
