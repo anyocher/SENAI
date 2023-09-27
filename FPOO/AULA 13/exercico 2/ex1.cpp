@@ -32,7 +32,7 @@ int main()
         
         numero = atof(linha);
 
-        if (numero != 0) {
+        if (numero != NULL) {
             soma += numero;
             contador++;
 }
