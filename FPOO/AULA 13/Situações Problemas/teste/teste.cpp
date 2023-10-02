@@ -33,7 +33,7 @@ setlocale(LC_ALL,"");
             }
         } else if (comando == 'D') {
            
-            if (direcao == 'L') {
+            if (direcao == 'N') {
                 direcao = 'S';
             } else if (direcao == 'L') {
                 direcao = 'S';

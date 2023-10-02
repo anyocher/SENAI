@@ -1,22 +1,10 @@
 #include <stdio.h>
-int total, i, j;
 
-void mostrarPortas(int *portas){
-	for(i = 0; i < total; i++){
-		if(portas[i])
-			printf("porta %d aberta\n", i + 1);
-		else
-			printf("porta %d fechada\n", i + 1);
-	}
-}
-
-void formatarSaida(int *portas){
-	for(i = 0; i < total; i++){
-		if(portas[i])
-			printf("%d ", i + 1);
-	}
-	printf("\n");
-}
+//Variáveis Globais
+FILE *entrada, *saida;
+char in[] = "portas.in";
+char out[] = "portas.out";
+int i, j;
 
 void solucao(int total){
 	int portas[total];
@@ -28,16 +16,28 @@ void solucao(int total){
 		for(j = i; j <= total; j+=i)
 			if(portas[j-1]) portas[j-1] = 0;
 			else portas[j-1] = 1;
-	//Mostrar na tela
-	mostrarPortas(portas);
-	formatarSaida(portas);
+	//Gravar a saída no arquivo
+	for(i = 0; i < total; i++){
+		if(portas[i])
+			fprintf(saida,"%d ",i + 1);
+	}
+	fprintf(saida,"\n");
+	printf("%d\n",total);
 }
 
 int main(){
-	while(1){
-		printf("Digite quantas portas e descendentes: ");
-		scanf("%d", &total);
-		solucao(total);
+	entrada = fopen(in, "r");
+	if(entrada == NULL){
+		printf("Erro ao ler arquivo");
+	}else{
+		int total;
+		saida = fopen(out,"w");
+		do{
+			fscanf(entrada, "%d",&total);
+			solucao(total);
+		}while(total != 0);
+		fclose(saida);
 	}
+	fclose(entrada);
 	return 0;
 }
