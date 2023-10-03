@@ -179,9 +179,11 @@
 // var salario
 // var numFilho
 // console.log("Digite seu Salário")
-// salario=Number(prompt())
-// numFilho= Number(prompt());
+// salario=Num 
+// numFilho= Num + 45
 // if ((salario>2000 && numFilho>=45)){
+
+// }
 
 
 // }
