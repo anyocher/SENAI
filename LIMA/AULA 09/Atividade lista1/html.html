@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LISTA DE EXERCÍCIOS</title>
+    <link rel="stylesheet" href="Css.css" />
+  </head>
+  <body>
+    <h1>Lista de Exercícios</h1>
+    <br />
+
+ 
+    <div class="ex1">
+      <h2>Exercício 1</h2>
+      <p>
+        Desenvolva um programa que leia a velocidade de um carro (km/h) e a
+        distância a ser percorrida (km) por ele. Calcule e apresente na tela,
+        quanto tempo (horas) será necessário para o carro percorrer a distância
+        informada.
+      </p>
+
+      <label>Velocida do carro (km/h)</label>
+      <input type="number" id="velex1" />
+      <label>Distânca percorrida (km)</label>
+      <input type="number" id="disex1" />
+      <button onclick="calcularTempo()">Calcular Tempo</button>
+      <h3 id="result1"></h3>
+    </div>
+
+    
+    <div class="ex2">
+      <h2>Exercício 2</h2>
+      <p>
+        Desenvolva um programa que leia o nome e o salário de uma pessoa, depois
+        leia o valor do índice percentual (%) de reajuste do salário. Calcule e
+        apresente na tela, o valor do novo salário e o nome da pessoa.
+      </p>
+
+      <label>Nome</label>
+      <input type="text" id="nome" />
+      <label>Salário</label>
+      <input type="number" id="salario" />
+      <label>% de Aumento</label>
+      <input type="number" id="aumento" />
+      <button onclick="calcularSalario()">Calcular Salário</button>
+      <h3 id="text2"></h3>
+      <h3 id="result2"></h3>
+    </div>
+
+    
+    <div class="ex3">
+      <h2>Exercício 3</h2>
+      <p>
+        Desenvolva um programa que leia o nome de um time de futebol, o número de vitórias e o 
+        número de empates. O programa deverá calcular e apresentar na tela, o nome do time e o total 
+        de pontos. Lembrando que a vitória vale 3 pontos e o empate vale 1 ponto.
+      </p>
+
+      <label>Time de Futebol</label>
+      <input type="text" id="time" />
+      <label>Número de Vitórias</label>
+      <input type="number" id="vit" />
+      <label>Número de Empates</label>
+      <input type="number" id="emp" />
+      <button onclick="calcularPontos()">Calcular Pontos</button>
+      <h3 id="text3"></h3>
+      <h3 id="result3"></h3>
+    </div>
+
+    
+    <div class="ex4">
+      <h2>Exercício 4</h2>
+      <p>
+        Desenvolva um programa que leia um número ”n” inteiro, positivo e 
+        diferente de zero e apresente na tela: n – 1, e também n + 1.
+      </p>
+
+      <label>Digite Um número Inteiro</label>
+      <input type="number" id="num" />
+      <button onclick="calcularOperacao()">Calcular Operação</button>
+      <h3 id="result4"></h3>
+      <h3 id="result4-1"></h3>
+    </div>
+
+
+
+
+    <div class="ex5">
+      <h2>Exercício 5</h2>
+      <p>
+        Sabendo-se que a velocidade de cruzeiro de um avião 747-300 é de 900 km/h, 
+        faça um programa que leia uma distância (km), calcule e apresente na tela, 
+        quanto tempo (horas) será necessário para um 747-300 sobrevoar a distância informada.
+      </p>
+
+      <label>Distância (km)</label>
+      <input type="number" id="disex5">
+      <button onclick="calcularTempoAviao()">Calcular Tempo</button>
+      <h3 id="result5"></h3>
+    </div>
+
+    <div class="ex6">
+      <h2>Exercício 6</h2>
+      <p>
+        Um caminhão consegue transportar 18 toneladas de laranjas em uma viagem que faz entre a fazenda
+        e a fábrica de suco de laranja. Um alqueire de terra produz em média 250 toneladas de laranjas.
+        Faça um programa que leia quantos caminhões e quantos alqueires uma fazenda produtora de laranjas possui,
+        calcule e apresente na tela quantas viagens de caminhão serão necessárias para transportar toda a colheita de laranjas.
+      </p>
+
+      <label>Quantidade de Caminhões</label>
+      <input type="number" id="qtdCamin">
+      <label>Alqueires</label>
+      <input type="number" id="qtdAlq">
+      <button onclick="calcularViagens()">Calcular Viagens</button>
+      <h3 id="result6"></h3>
+    </div>
+
+    
+    <div class="ex7">
+      <h2>Exercício 7</h2>
+      <p>
+        Desenvolva um programa que leia o raio (cm) e a altura (cm) de um cilindro.
+        Calcule e mostre a área (cm2) e o volume (cm3) do cilindro.
+      </p>
+
+      <label>Raio (cm)</label>
+      <input type="number" id="raio">
+      <label>Altura (cm)</label>
+      <input type="number" id="altura">
+      <button onclick="calcularRV()"">Calcular Área e Volume</button>
+      <h3 id="result7AreaB"></h3>
+      <h3 id="result7AreaL"></h3>
+      <h3 id="result7AreaT"></h3>
+      <h3 id="result7Volume"></h3>
+    </div>
+
+    
+    <div class="ex8">
+      <h2>Exercício 8</h2>
+      <p>
+        Desenvolva um programa que leia o nome e o preço de uma mercadoria. O programa deverá
+        calcular um aumento de 5% no preço da mercadoria e mostrar o nome da mercadoria e o seu novo preço.
+      </p>
+
+      <label>Nome da Mercadoria</label>
+      <input type="text" id="merc">
+      <label>Preço da Mercadoria</label>
+      <input type="number" id="preco">
+      <button onclick="calcularPreco()">Calcular Preço</button>
+      <h3 id="nomeMerc"></h3>
+      <h3 id="precoAntigo"></h3>
+      <h3 id="novoPreco"></h3>
+    </div>
+
+    
+    <div class="ex9">
+      <h2>Exercício 9</h2>
+      <p>
+        Desenvolva um programa que leia o nome de uma cidade, o número total de eleitores e o
+        número total de votos apurados na última eleição. O programa deverá calcular e exibir
+        a porcentagem de participação dos eleitores desta cidade na última eleição.
+      </p>
+
+      <label>Nome da Cidade:</label>
+      <input type="text" id="cidade">
+      <label>Número de Eleitores:</label>
+      <input type="number" id="eleitores">
+      <label>Votos Apurados:</label>
+      <input type="number" id="votos">
+      <button onclick="porcentagemEleicao()">Calcular Porcentagem</button>
+      <h3 id="nomeCidade"></h3>
+      <h3 id="porcentagem"></h3>
+    </div>
+  </body>
+  <script src="Javascript.js"></script>
+</html>
