@@ -4,7 +4,6 @@ class salario {
       this.inss = inss;
       this.irrf = irrf;
       }
-
     irrf(salario) {
             if (salario < 1903.99)
                return 0;
