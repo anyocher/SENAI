@@ -1,11 +1,9 @@
 class salario {
     constructor(salario, inss){
-
       this.salario = salario;
       this.inss = inss;
       this.irrf = irrf;
-
-}
+      }
 
     irrf(salario) {
             if (salario < 1903.99)
@@ -30,9 +28,8 @@ class salario {
                  return salario * 14 / 100;
         else
                  return 1051.05;
-         }
-
-   
+                 
+}
 }
 
   console.log(novoSalario.inss);
