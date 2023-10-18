@@ -13,24 +13,33 @@ body{
 
 body h1{
     margin-top: 30px;
-    color: rgb(99, 5, 99);
+    color: rgb(141, 135, 228);
 }
+
+
+body h3{
+    color: rgb(152, 165, 238);
+    margin-top: 40px;
+}
+
+
 
 main{
     width: 100%;
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 250px 250px 250px;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 2rem;
+    margin-top: 7rem;
 }
 
 main div{
     display: flex;
     flex-direction: column;
-    background-color: rgb(187, 112, 202);
-    padding: 10px;
+    background-color: #c8c8f3;
+    padding: 20px;
+    border-radius: 30px;
 
 }
 main div label{

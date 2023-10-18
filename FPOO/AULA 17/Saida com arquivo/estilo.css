@@ -1,0 +1,497 @@
+
+* {
+    padding: 0;
+    margin: 0;
+   
+}
+
+body{
+    background-color: #000000;
+}
+
+header h1 {
+    color: #fff;
+}
+
+
+header {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-family: var(--ff-01);
+}
+
+header p {
+    margin-bottom: 1rem;
+}
+
+header p span {
+    padding-inline: 2px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: var(--ff-01);
+}
+
+.insert input[type="text"], .insert input[type="number"] {
+    padding: 10px;
+    outline: none;
+}
+
+.insert input[type="text"]:focus, .insert input[type="number"]:focus {
+    outline: 1px solid transparent;
+}
+
+
+
+.card-grid {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 22px;
+    box-shadow: 1px 1px 15px 1px ;
+    user-select: none;
+    transition: 0.5s ease;
+}
+
+.card h2::before {
+    content: 'Nome:';
+    position: relative;
+    left: 0;
+    margin-right: 3rem;
+}.card h3:nth-child(2)::before {
+    content: 'Salário:';
+    position: relative;
+    left: 0;
+    margin-right: 3.3rem;
+}.card h3:nth-child(3)::before {
+    content: 'INSS:';
+    position: relative;
+    left: 0;
+    margin-right: 4.5rem;
+}.card h3:nth-child(4)::before {
+    content: 'Sal. Base:';
+    position: relative;
+    left: 0;
+    margin-right: 2.2rem;
+}.card h3:nth-child(5)::before {
+    content: 'IRRF:';
+    position: relative;
+    left: 0;
+    margin-right: 4.6rem;
+}.card h3:nth-child(6)::before {
+    content: 'Sal. Liquido:';
+    position: relative;
+    left: 0;
+    margin-right: 1rem;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.card-buttons button {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.card-buttons button:nth-child(1) {
+    border: 1px solid aqua;
+}.card-buttons button:nth-child(1):hover {
+    background-color: aqua;
+    color: black;
+}
+
+
+
+.alert {
+    animation: alertKey 1s;
+}
+
+@keyframes alertKey {
+    0%{
+        background-color: red;
+        color: white;
+    }
+    25%{
+        background-color: white;
+        color: black;
+    }
+    50%{
+        background-color: red;
+        color: white;
+    }
+    75%{
+        background-color: white;
+        color: black;
+    }
+    100%{
+        background-color: red;
+        color: white;
+    }
+}
+
+
+.message-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+}.message-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: black;
+    opacity: 0.2;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    z-index: 101;
+}
+
+.message #exclude {
+    padding: 10px;
+    border: 1px solid green;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}.message #exclude:hover {
+    background-color: green;
+    color: white;
+}
+
+.message #cancel {
+    padding: 10px;
+    border: 1px solid red;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+}.message #cancel:hover {
+    background-color: red;
+    color: white;
+}
+
+#objNome {
+    display: flex;
+}#objNome input {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+}
+
+#objSalario {
+    display: flex;
+}#objSalario input {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.button-done {
+    padding: 10px;
+    border: 1px solid green;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}.button-done:hover {
+    background-color: green;
+    color: white;
+}@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-01: #333;
+    --clr-02: #ddd;
+    
+    --bg-clr-01: #373737;
+    --bg-clr-02: #1C3041;
+    --bg-clr-03: #2FE6DE;
+
+    --fc-01: #fff;
+
+    --ff-01: 'Teko', sans-serif;
+}
+/* 
+body {
+    background-color: rgb(215, 215, 212);
+} */
+
+header {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-family: var(--ff-01);
+}
+
+header p {
+    margin-bottom: 1rem;
+}
+
+header p span {
+    padding-inline: 2px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: var(--ff-01);
+}
+
+.insert input[type="text"], .insert input[type="number"] {
+    padding: 10px;
+    outline: none;
+}
+
+.insert input[type="text"]:focus, .insert input[type="number"]:focus {
+    outline: 1px solid transparent;
+}
+
+.insert button {
+    border: 1px solid var(--clr-01);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.card-grid {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    padding: 40px;
+    background-color: var(--bg-clr-02);
+    color: var(--bg-clr-03);
+
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 22px;
+
+    box-shadow: 1px 1px 15px 1px var(--bg-clr-02);
+
+    user-select: none;
+    transition: 0.5s ease;
+}
+
+.card h2::before {
+    content: 'Nome:';
+    position: relative;
+    left: 0;
+    margin-right: 3rem;
+}.card h3:nth-child(2)::before {
+    content: 'Salário:';
+    position: relative;
+    left: 0;
+    margin-right: 3.3rem;
+}.card h3:nth-child(3)::before {
+    content: 'INSS:';
+    position: relative;
+    left: 0;
+    margin-right: 4.5rem;
+}.card h3:nth-child(4)::before {
+    content: 'Sal. Base:';
+    position: relative;
+    left: 0;
+    margin-right: 2.2rem;
+}.card h3:nth-child(5)::before {
+    content: 'IRRF:';
+    position: relative;
+    left: 0;
+    margin-right: 4.6rem;
+}.card h3:nth-child(6)::before {
+    content: 'Sal. Liquido:';
+    position: relative;
+    left: 0;
+    margin-right: 1rem;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.card-buttons button {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.card-buttons button:nth-child(1) {
+    border: 1px solid aqua;
+}.card-buttons button:nth-child(1):hover {
+    background-color: aqua;
+    color: black;
+}
+
+.card-buttons button:nth-child(2) {
+    border: 1px solid red;
+    margin-left: 20px;
+}.card-buttons button:nth-child(2):hover {
+    background-color: red;
+}
+
+.alert {
+    animation: alertKey 1s;
+}
+
+@keyframes alertKey {
+    0%{
+        background-color: red;
+        color: white;
+    }
+    25%{
+        background-color: white;
+        color: black;
+    }
+    50%{
+        background-color: red;
+        color: white;
+    }
+    75%{
+        background-color: white;
+        color: black;
+    }
+    100%{
+        background-color: red;
+        color: white;
+    }
+}
+
+
+.message-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+}.message-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: black;
+    opacity: 0.2;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    z-index: 101;
+}
+
+.message #exclude {
+    padding: 10px;
+    border: 1px solid green;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}.message #exclude:hover {
+    background-color: green;
+    color: white;
+}
+
+.message #cancel {
+    padding: 10px;
+    border: 1px solid red;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+}.message #cancel:hover {
+    background-color: red;
+    color: white;
+}
+
+#objNome {
+    display: flex;
+}#objNome input {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+}
+
+#objSalario {
+    display: flex;
+}#objSalario input {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.button-done {
+    padding: 10px;
+    border: 1px solid green;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}.button-done:hover {
+    background-color: green;
+    color: white;
+}

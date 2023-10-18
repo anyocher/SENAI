@@ -1,0 +1,24 @@
+body{
+    background: #ffffff;
+}
+
+caixa {
+    border-bottom: 56px;
+}
+
+.card{
+    width: 250px;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid black;
+    background: #fff;
+    box-shadow: 5px 5px 15px rgba(0,0,0, .5);
+}
+
+.card h1{
+    text-align: center;
+}
+
+.model{
+    display: none;
+}
