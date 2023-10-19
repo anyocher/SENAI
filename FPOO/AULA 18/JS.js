@@ -37,4 +37,4 @@ class Pagamento {
 
 const pgto1 = new Pagamento("João", 2689);
 console.log(pgto1);
-console.table(pgto1)
+console.table(pgto1);
