@@ -1,0 +1,14 @@
+id;produto;tipo;custo;preco;valor
+1;camiseta;vestuario;30,00;60,00;50,00
+2;calça;vestuario;50,00;80,00;100,00
+3;boné;vestuario;15,00;40,00;25,00
+4;meia;vestuario;5,00;10,00;8,00
+5;cueca;vestuario;5,00;10,00;8,00
+6;mini fusca;decoração;100,00;200,00;150,00
+7;mini moto;decoração;120,00;240,00;200,00
+8;mini caminhao;decoração;150,00;300,00;250,00
+9;mini bicicleta;decoração;80,00;160,00;120,00
+10;miniatura thor;decoração;235,00;410,00;338,00
+11;miniatura thor;decoração;275,00;410,00;338,00
+12;miniatura hulk;decoração;205,00;410,00;338,00
+13;miniatura homem de ferro;decoração;205,00;410,00;338,00
