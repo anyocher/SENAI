@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="logo.png">
+    <title>Bijuteria Florest Shop</title>
+</head>
+
+<body>
+    <header class="container-header">
+        <div class="header-content">
+            <h1>Bijuteria Florest Shop</h1>
+            <nav>
+                    <input id="abrir" type="file" class="input-file" accept=".json">
+                    <button id="login" type="button" onclick="aparecer()" class="btn-login oculto" data-toggle="modal"
+                        data-target="#modalLogin">Fazer Login</button>
+                    <button id="sair" type="button" class="btn-sair oculto" onclick="logout()">Sair</button>
+                    <button id="salvar" class="btn-salvar oculto" onclick="download()">Salvar</button>
+            </nav>
+
+        </div>
+        <div id="boasVindas" class="Welcome oculto">
+            <h3 id="nome"></h3>
+            <div>
+                <button id="item" type="button" class="btn-add oculto" data-toggle="modal"
+                    data-target="#modalItem">Adicionar Itens</button>
+                <button type="button" class="btn-listar oculto" data-toggle="modal" data-target="#modalVendas"
+                    onclick="preencherVendas()">Listar Vendas</button>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div id="container" class="row justify-content-md-center">
+            <div class="col">
+                <h2>Trabalhando com dados locais</h2>
+                <p>Sistema de exemplo para aulas de Web Design, com HTML, BootStrap e JavaScript</p>
+                <p>Para executar o sistema faça upload do arquivo JSON com dados iniciais de teste, seguindo o modelo a
+                    seguir: <a download href="bd/dados.json">dados.json</a>
+                </p>
+                <p>Faça donload do modelo e carrege o sistema com ele clicando em <b>Escolher arquivo</b></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <!-- Modal Login -->
+    <div class="modal fade oculto" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Fazer Login</h5>
+                    <button type="button" class="close-login" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="formLogin">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <div class="input">
+                                <input type="text" name="email" id="loginEmail" required="" autocomplete="off">
+                                <label for="name">E-mail</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input">
+                                <input type="text" name="senha" id="loginSenha" required="" autocomplete="off">
+                                <label for="name">Senha</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Acessar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Vender -->
+    <div class="modal fade" id="modalVender" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Registrar Venda</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="formVender">
+                    <div class="modal-body">
+                        <input type="hidden" name="id">
+                        <div class="form-group">
+                            <label for="quantidade">Quantidade</label>
+                            <input type="number" class="form-control" name="quantidade" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="preco">Preço R$</label>
+                            <input type="number" class="form-control" name="preco" step="0.1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="total">Total</label>
+                            <input type="number" class="form-control" name="total" disabled>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Concluir Venda</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Vendas -->
+    <div class="modal fade" id="modalVendas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Vendas do Dia</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Data</th>
+                                    <th scope="col">Usuário</th>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">Quantidade</th>
+                                    <th scope="col">Valor unitário</th>
+                                    <th scope="col">Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody id="vendas">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Produto -->
+    <div class="modal fade" id="modalItem" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cadastrar novo Produto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="formItem">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="nome">Nome do ítem</label>
+                            <input type="text" class="form-control" name="nome" placeholder="Nome do ítem" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descricao">Descrição</label>
+                            <textarea class="form-control" name="descricao"
+                                placeholder="Digite uma descrição para o produto ou serviço" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo">Tipo</label>
+                            <select class="form-control" name="tipo">
+                                <option value="Produto">Produto</option>
+                                <option value="Serviço">Serviço</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="img">Link da imagem</label>
+                            <textarea class="form-control" name="img"
+                                placeholder="Cole aqui o link de uma imagem de ilustração"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="preco">Preço R$</label>
+                            <input type="number" class="form-control" name="preco" step="0.1" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Concluir cadastro</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
