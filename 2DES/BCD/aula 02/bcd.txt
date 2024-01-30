@@ -1,0 +1,5 @@
+MER Modelo entidade relacionamento 
+Entidade(Atributo chave primaria Atributos:tipo, Atributo: tipo: modificador)
+Entidade(Atributo chave primaria tipo: Atributo: tipo:Atributo chave estrangeira: tipo (referencia))
+
+MER Modelo entidade relacionamento: banco genérico
