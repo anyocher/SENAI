@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/PWBE/aula 02/Projeto B/projB/front/FOTO/DONABETH.png"> 
+    <title>Lojinha</title>
+</head>
+<body>
+    <header>
+        <h1>Listar todos os clientes</h1>
+    </header>
+    
+    <nav>
+        <a href="./index.html">Cadastra-se</a>
+        
+
+    </nav>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    
+                    <th>Nome</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Quantidade</th>
+                    <th>Total</th>
+                    <th>Data</th>
+
+                </tr>
+            </thead>
+            <tbody id="dados">
+            </tbody>
+        </table>
+    </main>
+    
+    
+</body>
+<script>
+    const dados = document.getElementById('dados');
+    fetch('http://localhost:3000/form')
+        .then(res => res.json())
+        .then(res => {
+            res.forEach(cli => {
+                dados.innerHTML += `
+                    <tr>
+                       
+                        <td>${cli.nome}</td>
+                        <td>${cli.produto}</td>
+                        <td>${cli.valor}</td>
+                        <td>${cli.quantidade}</td>
+                        <td>${cli.total}</td>
+                        <td>${cli.data}</td>
+                       
+                    </tr>
+                `;
+            });
+        });
+</script>
+</html>
