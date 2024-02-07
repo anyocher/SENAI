@@ -1,0 +1,33 @@
+MER- Modelo Entidade Relacionamento
+
+VAREGISTA- Renner
+
+Funcionario (cpf: texto(15), nome_ completo: texto(20),telefone : texto(15) - nulo, salario: moeda, cargo: texto(20));
+
+Clientes (cpf: texto(20), nome_completo: texto(100), telefone: texto(20) - nulo, nascimento: data, email: texto(30));
+
+Cartão (creditos: texto(100), cpf do Cliente: texto(20) - Referencia[Cliente:cpf], id do cartão: texto(20), senha: texto(10));
+
+produto (id: inteiro, categoria: texto(20), valor: moeda, quantidade: numero);
+
+Pedido (id: inteiro, DataPedido: data, Status: texto(20), estoque: texto(20), id_produto: inteiro - Referencia [Produto:id], cpf_cliente: texto(20) - Referencia [Clientes: cpf], tipo_pagamento: texto[20], cpf_funcionario: texto(15) - referencia[Funcionario: cpf]);
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+MER
+    Dicionário de dados 
+                        { Estrutura
+DER
+    Dados
+          {Tabelas, campos e registros(linhas das tabelas)
+
+777-7 = 100-200-100= 700
+
+333-7 = -100
+
+333-8 = 1300+200 = 1700
+
+444-6 = 1600
+
+777-8 = 300+200+200 = 700
