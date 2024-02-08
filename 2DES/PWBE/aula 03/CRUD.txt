@@ -1,0 +1,9 @@
+CRUD 
+
+Create 		|	insert into...		|	post
+		|				|
+read		|	select from whore	|	get
+		|				|
+update		|	update where		|	put
+		|				|
+delete		|	delete from where	|	delek
