@@ -1,8 +1,16 @@
-<Text>Ana Clara Ortiz Ochner</Text>
-      <p></p>
-    
-      <Text>Nascida em Mogi Guaçu, e atualmente morando em jaguariúna</Text>
-      <p></p>
-      
-      <Text>Estudante de desenvolvimento de sistemas no Senai-Jaguariúna, e cursando o 3°ano do ensino médio</Text>
-      <StatusBar style="auto" />
+My page 
+
+
+imagem 
+
+Name 
+
+Dados
+
+--> Formaçao
+
+-->link do github
+
+
+
+--->estilizaçao como um curriculo 
