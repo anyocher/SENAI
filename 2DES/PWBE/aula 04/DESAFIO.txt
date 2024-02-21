@@ -1,0 +1,12 @@
+Projeto full stack
+
+Tema: borracharia
+
+Back: tabelas banco
+ -fornecedores 
+ -clientes
+ -produtos
+
+Front: crie três paginas
+
+crie um index.html 
