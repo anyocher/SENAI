@@ -3,9 +3,10 @@ import { useState } from 'react';
 import { StyleSheet, Text, View, Image, Switch,ImageBackground, ScrollView } from 'react-native';
 
 const  icon = require('./assets/icon.png');
-const backgroundImage = require('./assets/fundoceu.png');
+const backgroundImage = require('./assets/funfo.gif');
 
 export default function App() {
+  
 const [habilitado, setHabilitado] = new useState(false);
 
 const habilitar = () => {
@@ -13,7 +14,7 @@ const habilitar = () => {
 }
 
   return (
-    <ImageBackground source={backgroundImage} style={styles.fun}>
+    <ImageBackground source={backgroundImage} style={styles.funfo}>
     <View style={styles.container}>
       <Image
       source={icon}
@@ -27,13 +28,13 @@ const habilitar = () => {
       source={{
         uri: (habilitado)
         ? "./assets/sun.png"
-        : "./assets/full-moon.png"
+        : "./assets/moon.png"
       }}
-      style={[styles.anime, {opacity: 0.8}]}
+      style={[styles.sol, {opacity: 0.8}]}
       />
       <Image
       source={{
-        // uri: "https://w7.pngwing.com/pngs/924/553/png-transparent-thirty-one-gift-idea-business-organization-plan-man-service-sticker-musician.png"
+       
 
       }}
       style={styles.pessoa}
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
   scrollContainer: {
     flexGrow: 1,
   },
-  fun: {
+  funfo: {
     flex: 1,
     resizeMode: 'cover',
     justifyContent: 'center',
@@ -65,7 +66,7 @@ const styles = StyleSheet.create({
     width: '68px',
     height: '68px'
   },
-  anime: {
+  sol: {
     width: '80px',
     height: '80px'
   },
