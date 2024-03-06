@@ -6,8 +6,8 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #343a40;
+    background-color: #000000;
+    color: #000000;
     padding-top: 0px;
 }
 .container {
@@ -20,12 +20,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-    background-color: #343a40;
+    background-color: #000000;
 }
 .navbar-brand {
     color:#ffffff;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 34px;
     align-items: center;
 }
 .navbar-nav .nav-link {
@@ -34,10 +34,10 @@ body {
     transition: color 0,3s ease;
 }
 .navbar-nav .nav-link:hover {
-    color: #007bff;
+    color: #4a4670;
 }
 .form-control {
-    border-color: #ffffff;
+    border-color: #fffdfd;
     color:#ffffff;
 }
 .btn-outline-light {
