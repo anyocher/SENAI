@@ -3,9 +3,7 @@
 ## Ensino tecnico Senai-Jaguariúna
 
 ### `1 DES`
-- LIMA - SOP
-- FPOO
-- Hare
+- LIMA - SOP - FPOO - Hare
 ### `2 DES`
 - BCD
 - PWBE
