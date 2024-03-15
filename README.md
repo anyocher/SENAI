@@ -3,14 +3,8 @@
 ## Ensino tecnico Senai-Jaguariúna
 
 ### `1 DES`
-- LIMA - SOP - FPOO - Hare
+- LIMA - SOP - FPOO - HARE
 ### `2 DES`
-- BCD
-- PWBE
-- PWFE
-- INDMO
+- BCD - PWBE - PWFE - INDMO
 ### `3 DES`
-- PROJ
-- RMS
-- TS
-- PPDMO
+- PROJ - RMS - TS - PPDMO
