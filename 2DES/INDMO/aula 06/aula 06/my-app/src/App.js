@@ -87,10 +87,11 @@ function App() {
     <div>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Minha Loja</Navbar.Brand>
+          <Navbar.Brand href="#home">Daily Check</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#produtos">Produtos</Nav.Link>
+            <Nav.Link href="temperatura.html">temperatura</Nav.Link>
+            <Nav.Link href="#contato">Tarefa</Nav.Link>
             <Nav.Link href="#contato">Contato</Nav.Link>
           </Nav>
           <Button variant="primary" onClick={handleShow}>
@@ -99,15 +100,54 @@ function App() {
         </Container>
       </Navbar>
 
+{/* <nav class="navbar navbar-expand-lg navbar-dark bg-">
+
+<div class="container">
+
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="temperatura.html">temperatura</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="matricula.html">tarefa</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="contato.html">Conato</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalContato">Contato</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+</nav> */}
+
       <Container className="mt-5">
         <h1 className="text-center mb-4">Produtos em Destaque</h1>
         <div className="row">
-          <ProductCard name="Produto 1" addToCart={addToCart} />
-          <ProductCard name="Produto 2" addToCart={addToCart} />
-          <ProductCard name="Produto 3" addToCart={addToCart} />
-          <ProductCard name="Produto 4" addToCart={addToCart} />
-          <ProductCard name="Produto 05" addToCart={addToCart} />
-          <ProductCard name="Produto 6" addToCart={addToCart} />
+          <ProductCard name="frio" addToCart={addToCart} />
+          <ProductCard name="outono" addToCart={addToCart} />
+          <ProductCard name="primavera" addToCart={addToCart} />
+          <ProductCard name="verao" addToCart={addToCart} />
         </div>
       </Container>
 

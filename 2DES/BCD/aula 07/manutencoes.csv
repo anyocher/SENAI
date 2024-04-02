@@ -45,25 +45,20 @@ Funcionario
 | 48482       | Ursula Souza       |
 | 48542       | Osvaldo Oliveira   | 
 | 48502       | Evandro Silva      |
-| 48522       |  Keli Matos        |
+| 48522       | Keli Matos         |
 | 48522       | Jaquelina Teixeira |
 +----------------------------------+
-
-
-
-
-
 
 
 +----------------+        +------------------+        +------------------+   +----------------+
 |    Manutencao  |        |    Funcionario   |        |     Telefone     |   |   Veiculo      |
 +----------------+        +------------------+        +------------------+   +----------------+ 
 | id_manutencao  |        |    matricula     |        |    telefone      |   | Placa          |
-| inicio_manutencao |     | nome_funcionario |        |                  |   | Modelo         |
+|inicio_manutencao|     | nome_funcionario |        |                  |   | Modelo         |
 | fim_manutencao |        |                  |        |                  |   | Marca          |
 | descricao      |        |                  |        |                  |   | Ano            |
 | placa          |        +------------------+        +------------------+   | Matricula      |
-                                                                             | Funciona       |
+                                                                             | Funcionario    |
                                                                              +----------------+
 | modelo         |
 | marca          |
