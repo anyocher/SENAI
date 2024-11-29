@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Tarefas</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <!-- Menu -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index1.html">Cadastro de Usuários</a></li>
+        <li><a href="index2.html">Cadastro de Tarefas</a></li>
+        <li><a href="index3.html">Gerenciar Tarefas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="form-section">
+      <h2>Cadastro de Tarefas</h2>
+      <form id="formTarefa">
+        <input type="text" placeholder="Descrição da Tarefa" id="descricao" required />
+        <input type="text" placeholder="Setor" id="setor" required />
+        
+        
+        <select id="usuario" required>
+          <option value="">Selecione o Usuário</option>
+        </select>
+
+       
+        <select id="prioridade" required>
+          <option value="">Selecione a Prioridade</option>
+          <option value="Baixa">Baixa</option>
+          <option value="Média">Média</option>
+          <option value="Alta">Alta</option>
+        </select>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      
+      <div id="mensagemSucesso" class="mensagem-sucesso" style="display: none;">
+        Cadastro concluído com sucesso!
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Gerenciamento de Tarefas - feito por Ana Clara </p>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+<footer>
+    
+</footer>
+</html>
